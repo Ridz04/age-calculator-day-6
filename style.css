@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background: linear-gradient(135deg,#4203a9,#90bafc);
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+
+
+}
+
+.calculator{
+    margin-top: 10% ;
+    margin-left: 10%;  
+    width: 100%;
+    max-width: 600px;
+
+}
+
+.calculator h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.calculator h1 span{
+    color: #f6ff00;
+}
+
+.input-box{
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.input-box input{
+    border: 0;
+    outline: 0;
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+.input-box button{
+    border: 0;
+    outline: 0;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f6ff00;
+    color: #4203a9;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.input-box button:hover{
+    background: black;
+    color: white;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+#result span{
+    color: #f6ff00;
+}
